@@ -10,7 +10,6 @@ Source0: %{name}-%{version}.tar.bz2
 License: GPL
 Group: Sound
 URL: ftp://ftp.stack.nl/pub/users/willem/
-BuildRoot: %{_tmppath}/%{name}-buildroot
 Requires: xmms
 BuildRequires: xmms-devel
 BuildRequires: nas-devel
