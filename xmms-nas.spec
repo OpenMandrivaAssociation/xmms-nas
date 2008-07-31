@@ -1,6 +1,6 @@
 %define name xmms-nas
 %define version 0.2
-%define release %mkrel 4
+%define release %mkrel 6
 
 Summary: NAS Output plugin for XMMS
 Name: %{name}
