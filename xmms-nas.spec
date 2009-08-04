@@ -1,13 +1,13 @@
 %define name xmms-nas
 %define version 0.2
-%define release %mkrel 7
+%define release %mkrel 8
 
 Summary: NAS Output plugin for XMMS
 Name: %{name}
 Version: %{version}
 Release: %{release}
 Source0: %{name}-%{version}.tar.bz2
-License: GPL
+License: GPLv2+
 Group: Sound
 URL: ftp://ftp.stack.nl/pub/users/willem/
 BuildRoot: %{_tmppath}/%{name}-buildroot
@@ -20,9 +20,11 @@ This is an audio output plugin for XMMS for the NAS sound system.
 
 %prep
 %setup -q
+autoreconf -fi
 
 %build
-%configure
+%define _disable_ld_no_undefined 1
+%configure2_5x
 touch config.h
 %make
 
