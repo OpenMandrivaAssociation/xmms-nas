@@ -12,6 +12,11 @@ Group: Sound
 URL: ftp://ftp.stack.nl/pub/users/willem/
 BuildRoot: %{_tmppath}/%{name}-buildroot
 Requires: xmms
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: xmms-devel
 BuildRequires: nas-devel
 
